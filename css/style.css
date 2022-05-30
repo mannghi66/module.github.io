@@ -1,0 +1,53 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-4 .title {
+    border: 2px solid #000;
+    padding: 5px 30px;
+    float: right;
+    margin-top: -2px;
+    margin-right: -2px;
+    font-weight: 600;
+}
+.lorem {
+    border: 2px solid;
+    margin: 10px;
+    background: #999999;
+}
+.lorem .title.pink {
+    background: #D59898;
+}
+.lorem .title.red {
+    background: #C14543;
+    color: #fff;
+}
+.lorem .title.yellow {
+    background: #E5D198;
+}
+.lorem p {
+    display: inline-block;
+    padding: 0 20px;
+}
+h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+    .col-4 {
+        width: 50%;
+    }
+    .col-4.w-100 {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .col-4 {
+        width: 100%;
+    }
+}
